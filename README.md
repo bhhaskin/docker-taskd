@@ -1,4 +1,4 @@
-# docker-taskd
+# Taskwarrior Server (taskd) Docker
 Dockerfile &amp; compose file for taskd
 
 [Taskwarrior](https://www.taskwarrior.org/) is Free and Open Source Software that manages your TODO list from your command line. It is flexible, fast, efficient, and unobtrusive. It does its job then gets out of your way.
