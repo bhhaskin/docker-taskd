@@ -1,0 +1,15 @@
+version: '3'
+services:
+  taskd:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./taskd:/var/taskd
+    environment:
+      - 'CERT_ORGANIZATION="Example"'
+      - 'CERT_CN=taskd.example.com'
+      - 'CERT_COUNTRY=US'
+      - 'CERT_STATE="Nevada"'
+      - 'CERT_LOCALITY="Carson City"'
+    ports:
+      - 53589:53589
